@@ -1,0 +1,7 @@
+---
+- name: Copia el archivo
+  copy:
+   src: /root/origen/archivo.txt
+   dest: /root/destino/archivo.txt
+   backup: {{ bkp }}
+  
