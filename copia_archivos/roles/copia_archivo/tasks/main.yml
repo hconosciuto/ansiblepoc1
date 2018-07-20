@@ -4,5 +4,5 @@
    src: /root/origen/archivo.txt
    dest: /root/destino/archivo.txt
    remote_src: yes 
-   backup: yes 
+   backup: no 
   
