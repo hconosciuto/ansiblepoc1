@@ -3,6 +3,5 @@
   copy:
    src: /root/origen/archivo.txt
    dest: /root/destino/archivo.txt
-   remote_src: yes 
+   remote_src: no 
    backup: no 
-  
