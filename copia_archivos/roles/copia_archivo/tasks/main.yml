@@ -3,5 +3,6 @@
   copy:
    src: /root/origen/archivo.txt
    dest: /root/destino/archivo.txt
-   backup: {{ bkp }}
+   remote_src: yes 
+   backup: yes 
   
