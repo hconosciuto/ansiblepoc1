@@ -2,6 +2,6 @@
 - name: Copia el archivo
   copy:
    src: /root/origen/archivo.txt
-   dest: /root/destino/archivo.txt
+   drst: /root/destino/archivo.txt
    remote_src: no 
    backup: no 
