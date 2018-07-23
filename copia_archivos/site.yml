@@ -1,6 +1,6 @@
 ---
 - name: Copia un archivo dentro del mismo equipo
-  hosts: centos
+  hosts: Centos
   remote_user: root
 
   roles:
