@@ -1,8 +1,8 @@
 ---
 - name: Copia un archivo dentro del mismo equipo
-  hosts: Centos
+  hosts: centos01.herdom.com
   remote_user: root
 
   roles:
-        - copia_archivo
+        - copia_remota
 

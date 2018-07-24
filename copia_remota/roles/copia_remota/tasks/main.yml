@@ -1,0 +1,6 @@
+---
+- name: Copia un archivo entre servidores remotos 
+  synchronize:
+   src: /root/origen/archivo_remoto.txt
+   dest: /root/destino/archivo_remoto_copiado.txt
+  delegate_to: centos02.herdom.com
