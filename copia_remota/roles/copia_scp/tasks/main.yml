@@ -1,0 +1,3 @@
+---
+- name: Copia un archivo entre servidores remotos usando scp
+  shell: scp root@centos02.herdom.com:/root/origen/archivo_remoto.txt root@centos01.herdom.com:/root/destino/archivo_remoto_copiado_SCP.txt

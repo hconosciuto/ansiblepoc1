@@ -5,4 +5,5 @@
 
   roles:
         - copia_remota
+        - copia_scp
 
