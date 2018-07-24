@@ -1,1 +1,1 @@
-# Copia archivos de un directorio a otro
+# Copia archivos remoto de un servidor a otro usando RSYNC y SCP
