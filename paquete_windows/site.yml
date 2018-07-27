@@ -1,6 +1,7 @@
 ---
 - name: Baja servicio spooler, instala MSI y sube servicio spooler
   hosts: Windows
+  remote_user: Administrador
 
   roles:
         - instala_msi
