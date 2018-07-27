@@ -1,0 +1,6 @@
+---
+- name: Instala un MSI en Windows
+  win_package:
+   path: 'C:\vlci\Adobe.msi'
+   state: present 
+   product_id: auto 
