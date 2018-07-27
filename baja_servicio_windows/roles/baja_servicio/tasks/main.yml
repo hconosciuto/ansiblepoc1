@@ -1,0 +1,5 @@
+---
+- name: Baja un Servicio de Windows
+  win_service:
+   name: spooler 
+   state: stopped 
