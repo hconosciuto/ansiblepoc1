@@ -1,5 +1,9 @@
 ---
-- name: Baja un Servicio de Windows
+- name: Baja el servicio de spooler en Windows
   win_service:
    name: spooler 
-   state: stopped 
+   state: stopped
+- name: Baja el servicio de Themes en Windows
+  win_service:
+   name: Themes
+   state: stopped

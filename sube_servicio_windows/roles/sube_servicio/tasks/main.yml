@@ -1,5 +1,9 @@
 ---
-- name: Sube un Servicio de Windows
+- name: Sube el servicio de spooler en Windows
   win_service:
    name: spooler 
+   state: started 
+- name: Sube el servicio de Themes en Windows
+  win_service:
+   name: Themes 
    state: started 
