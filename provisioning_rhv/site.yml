@@ -1,6 +1,6 @@
 ---
 - name: Copia un archivo dentro del mismo equipo
-  hosts: rhevm
+  hosts: RHEVM
   remote_user: root
 
   roles:

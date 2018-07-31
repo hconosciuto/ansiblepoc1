@@ -18,11 +18,11 @@
          cloud_init:
            nic_name: eth1
            nic_boot_protocol: static
-           nic_ip_address: 192.168.105.99 
+           nic_ip_address: "{{ num_ip }}" 
            nic_netmask: 255.255.255.0
            nic_gateway: 192.168.105.1
            nic_on_boot: true
-           host_name: asnible33.herdom.com  
+           host_name: "{{ nombre_host }}" 
 
      - name: Revoke the SSO token
        ovirt_auth:
