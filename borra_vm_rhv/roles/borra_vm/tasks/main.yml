@@ -16,7 +16,7 @@
      - name: Borra una VM en un cluster de RHV
        ovirt_vms:
          auth: "{{ ovirt_auth }}"
-         state: absentd
+         state: absent
          name: "{{ nombre }}"
          cluster: HERDOM
 
