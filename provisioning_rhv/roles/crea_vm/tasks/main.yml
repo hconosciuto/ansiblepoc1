@@ -11,7 +11,8 @@
          auth: "{{ ovirt_auth }}"
          state: present
          name: ansibleaut
-         template: centos_cloudinit
+         #template: centos_cloudinit
+         template: centos1nic
          cluster: HERDOM
          cpu_cores: 1
          memory: 2GiB
