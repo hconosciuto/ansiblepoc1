@@ -16,6 +16,7 @@
          cluster: HERDOM
          cpu_cores: 1
          memory: 2GiB
+         cloud_init_persist: true
          cloud_init:
            nic_name: eth0
            nic_boot_protocol: static
