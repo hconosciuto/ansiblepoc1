@@ -16,7 +16,7 @@
          cpu_cores: 1
          memory: 2GiB
          cloud_init:
-           nic_name: eth1
+           nic_name: eth0
            nic_boot_protocol: static
            nic_ip_address: "{{ num_ip }}" 
            nic_netmask: 255.255.255.0
