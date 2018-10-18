@@ -1,0 +1,8 @@
+---
+- name: espera que el proceso finalice
+  shell: ps -ef | grep vmstat | grep -v grep
+  register: proceso_pid
+  until: proceso_pid.stdout.find("vmstat") != -1
+  #until: proceso_estado.stdout is search("sleep")
+  retries: 30
+  delay: 1

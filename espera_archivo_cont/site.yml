@@ -1,0 +1,8 @@
+---
+- name: Espera que finalice el pid sleep
+  hosts: centos01.herdom.com
+
+  roles:
+        #- espera_archivo_cont 
+        - espera_pid
+

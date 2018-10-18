@@ -1,0 +1,8 @@
+---
+- name: espera que el proceso finalice
+  command: cat /tmp/proceso.txt 
+  register: proceso_estado
+  until: proceso_estado.stdout.find("Termino OK") != -1
+  #until: proceso_estado.stdout is search("sleep")
+  retries: 30
+  delay: 1
