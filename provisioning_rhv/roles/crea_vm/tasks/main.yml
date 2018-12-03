@@ -3,7 +3,7 @@
        ovirt_auth:
          url: https://rhevm4.herdom.com/ovirt-engine/api
          username: 'admin@internal'
-         password: cordoba
+         password: "{{ clave_rhv }}"
          ca_file: /etc/pki/ovirt-engine/ca.pem
 
      - name: Crea una VM en un cluster de RHV mediante un template.
