@@ -3,14 +3,14 @@
        ovirt_auth:
          url: https://rhevm4.herdom.com/ovirt-engine/api
          username: 'admin@internal'
-         password: cordoba
+         password: "{{ clave_rhv }}"
          ca_file: /etc/pki/ovirt-engine/ca.pem
 
      - name: Borra una VM en un cluster de RHV
        ovirt_vms:
          auth: "{{ ovirt_auth }}"
          state: absent
-         name: "{{ nombre }}"
+         name: "{{ nombre_vm }}"
          cluster: HERDOM
 
      - name: Revoke the SSO token
