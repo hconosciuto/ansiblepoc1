@@ -1,7 +1,12 @@
 ---
 - name: Copia un archivo dentro del mismo equipo
   hosts: localhost
+  gather_facts: False
   remote_user: root
+
+  vars_prompt:
+    - name: "nombre_host"
+      prompt: "Nombre del Servidor"
 
   roles:
         - muestra_valor
