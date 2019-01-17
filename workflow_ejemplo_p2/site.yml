@@ -1,0 +1,9 @@
+---
+- name: Crea el atchivo archivo_source.txt si no existe usando el sh crea_archivo_source.sh
+  hosts: centos01.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - crea_archivo_source 

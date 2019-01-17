@@ -1,0 +1,13 @@
+---
+- name: Copia el archivo archivo_source.txt.
+  synchronize:
+     src: /root/archivos/archivo_source.txt 
+     dest: /root/archivos/archivo_target.txt 
+     mode: push
+  delegate_to: centos01.herdom.com
+
+- name: Cambia atributos del archivo copiado.
+  file: 
+     path: /root/archivos/archivo_target.txt
+     mode: 0777
+     group: cdrom

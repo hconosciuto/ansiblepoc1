@@ -1,0 +1,9 @@
+---
+- name: Copia un archivo de centos01 a centos02 desde Tower.
+  hosts: centos02.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - copia_archivo

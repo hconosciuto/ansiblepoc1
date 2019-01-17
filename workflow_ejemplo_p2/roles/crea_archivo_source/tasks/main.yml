@@ -1,0 +1,4 @@
+---
+- name: Crea el achivo archivo_source.txt en centos01 si no existe.
+  shell: /root/bin/crea_archivo_source.sh
+

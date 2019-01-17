@@ -1,0 +1,3 @@
+---
+- name: Actualizxa el log ejecutando el sh registra_log.sh.
+  shell: /root/bin/registra_log.sh

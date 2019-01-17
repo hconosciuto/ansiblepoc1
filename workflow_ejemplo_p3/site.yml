@@ -1,0 +1,9 @@
+---
+- name: Ejecuta un sh registra_log.sh 
+  hosts: centos02.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - graba_log
