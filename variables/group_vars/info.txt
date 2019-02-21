@@ -1,0 +1,3 @@
+ansible-vault encrypt file.txt
+
+password: ansibletower
