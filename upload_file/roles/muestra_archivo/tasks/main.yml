@@ -1,0 +1,4 @@
+---
+     - name: Muestra el valor de la variable archivo..
+       debug:
+         msg: "El archivo seleccionado es: {{ archivo } "}
