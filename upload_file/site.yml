@@ -2,7 +2,7 @@
 - name: Muestra el nombre del archivo seleccionado por HTML y PHP.
   hosts: localhost
   gather_facts: False
-  #remote_user: root
+  remote_user: root
 
   roles:
         - muestra_archivo
