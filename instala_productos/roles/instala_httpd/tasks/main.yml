@@ -9,7 +9,7 @@
      name: httpd 
      state: started
 
-  - name: Restartea el httpd.
-    service: 
-      name: httpd 
-      state: restarted
+- name: Restartea el httpd.
+  service: 
+    name: httpd 
+    state: restarted
