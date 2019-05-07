@@ -1,0 +1,10 @@
+---
+- name: Instala un httpd.
+  yum:
+     name: httpd 
+     state: present
+
+- name: Se asegura que este levantado. 
+  service: 
+     name: httpd 
+     state: started
