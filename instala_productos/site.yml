@@ -1,6 +1,6 @@
 ---
 - name: Copia un archivo de centos01 a centos02 desde Tower.
-  hosts: contenedores
+  hosts: localhost
   gather_facts: false
   remote_user: root
 
