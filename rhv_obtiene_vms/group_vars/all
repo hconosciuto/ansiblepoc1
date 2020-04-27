@@ -1,0 +1,7 @@
+---
+# Variables listadas aqui son aplicables a todos los grupos
+# bkp: yes
+num_ip: 192.168.105.99
+nombre_host: ansible33.herdom.com
+clave_rhv: cordoba 
+

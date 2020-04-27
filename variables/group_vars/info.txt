@@ -1,3 +1,7 @@
 ansible-vault encrypt file.txt
 
+Para que no tenga el "\n" al final se hace desde el STDINPUT:
+
+echo -n "El texto encriptado dice: Este texto fue encriptado por ansible-vault" | ansible-vault encrypt_string --stdin-name 'texto_encriptado'
+
 password: ansibletower
