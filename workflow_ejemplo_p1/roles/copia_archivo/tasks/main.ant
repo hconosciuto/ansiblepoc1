@@ -1,8 +1,10 @@
 ---
 - name: Copia el archivo archivo_source.txt.
-  shell: scp root@centos01.herdom.com:/root/archivos/archivo_source.txt /root/archivos/archivo_target.txt
-  register: salida
-  failed_when: salida.rc == 1
+  synchronize:
+     src: /root/archivos/archivo_source.txt 
+     dest: /root/archivos/archivo_target.txt 
+     mode: push
+  delegate_to: centos01.herdom.com
 
 - name: Cambia atributos del archivo copiado.
   file: 
