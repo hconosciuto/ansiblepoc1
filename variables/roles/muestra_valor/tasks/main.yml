@@ -2,5 +2,5 @@
      - name: Muestra el valor de las variables pasadas.
        debug:
          msg: "Hostname: {{ nombre_host }} con IP: {{ num_ip }} -- El texto encriptado dice: {{ texto_encriptado }}" 
-     - name: Agrega las variables a un archivo.
-       shell: "echo 'Servidor: {{ nombre_host }} con IP: {{ num_ip }} -- texto encriptado: {{ texto_encriptado }}.' >>/tmp/hernan_variables.txt"
+     #- name: Agrega las variables a un archivo.
+     #  shell: "echo 'Servidor: {{ nombre_host }} con IP: {{ num_ip }} -- texto encriptado: {{ texto_encriptado }}.' >>/tmp/hernan_variables.txt"
