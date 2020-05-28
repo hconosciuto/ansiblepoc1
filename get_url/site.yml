@@ -1,0 +1,9 @@
+---
+- name:  Baja un archivo de una pagina.
+  hosts: localhost
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - get_url1

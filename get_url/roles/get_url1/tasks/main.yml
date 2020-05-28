@@ -1,0 +1,6 @@
+---
+- name: Baja un archivo de una pagina.
+  get_url: 
+     url: "{{ url_archivo }}" 
+     dest: /tmp/archivo_bajado.html
+
