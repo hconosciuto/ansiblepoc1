@@ -1,6 +1,6 @@
 ---
 - name:  Baja un archivo de una pagina.
-  hosts: localhost
+  hosts: tower.herdom.com
   gather_facts: false
   remote_user: root
 
