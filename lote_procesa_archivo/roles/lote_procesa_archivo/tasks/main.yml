@@ -1,0 +1,3 @@
+---
+- name: Procesa el archivo bajado del Web Server.
+  shell: /root/procesa_archivo_lotes.sh

@@ -1,0 +1,9 @@
+---
+- name: Copia el archivo bajado del Web Server con clave al centos01.
+  hosts: tower.herdom.com 
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - lote_copia_archivo

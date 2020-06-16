@@ -1,0 +1,6 @@
+---
+- name: Copia el archivo bajado antes del /tmp.
+  shell: scp /tmp/archivo_bajado_lotes.csv root@centos01.herdom.com:/root/archivos/archivo_bajado_lotes_copiado.csv
+  register: salida
+  failed_when: salida.rc == 1
+

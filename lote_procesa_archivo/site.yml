@@ -1,0 +1,9 @@
+---
+- name: Procesa el archivo bajado del Web Server.
+  hosts: centos01.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - lote_procesa_archivo
