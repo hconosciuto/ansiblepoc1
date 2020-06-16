@@ -1,0 +1,12 @@
+---
+- name: Borro el archivo antes de bajarlo.
+  file:
+     path: /tmp/archivo_bajado_lotes.csv
+     state: absent
+
+- name: Baja un archivo de una pagina.
+  get_url: 
+     url: "{{ url_archivo }}" 
+     dest: /tmp/archivo_bajado_lotes.csv
+     username: "{{ usuario }}"
+     password: "{{ password }}"

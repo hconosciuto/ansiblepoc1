@@ -1,0 +1,9 @@
+---
+- name:  Baja un archivo de una pagina.
+  hosts: tower.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - lote_baja_archivo
