@@ -1,0 +1,13 @@
+---
+- name: Remove entry 'hernan' from registry path MyCompany
+  win_regedit:
+    path: HKLM:\SOFTWARE\Parallels
+    name: Hernan
+    state: absent
+
+#- name: Addd entry 'hernan' from registry path MyCompany
+#  win_regedit:
+#    path: HKLM:\SOFTWARE\Parallels
+#    name: Hernan2
+#    state: present
+

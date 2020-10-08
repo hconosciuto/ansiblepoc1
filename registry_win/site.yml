@@ -1,0 +1,9 @@
+---
+- name:  Borr un valor de la Registry. 
+  hosts: WINDOWS2012R2
+  gather_facts: false
+  #remote_user: root
+
+  roles:
+
+     - borra_clave
