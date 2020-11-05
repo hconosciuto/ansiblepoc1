@@ -3,6 +3,6 @@
   win_regedit:
     path: HKLM:\SOFTWARE\Parallels
     name: Hernan
-    data: "Esto es una prueba"
+    data: '{{ valor }}' 
     state: present
 
