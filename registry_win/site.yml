@@ -1,9 +1,14 @@
 ---
-- name:  Borr un valor de la Registry. 
+- name:  Crea o Borra un valor de la Registry. 
   hosts: WINDOWS2012R2
   gather_facts: false
-  #remote_user: root
 
   roles:
 
-     - borra_clave
+     #- borra_clave
+     - role: crea_clave
+       when: accion == 'crear'
+
+     - role: borra_clave
+       when: accion == 'borrar'
+

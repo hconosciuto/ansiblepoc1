@@ -1,0 +1,8 @@
+---
+- name: Agrega la clave Hernan en HKLM:\SOFTWARE\Parallels y le setea un valor tipo STRING.
+  win_regedit:
+    path: HKLM:\SOFTWARE\Parallels
+    name: Hernan
+    data: "Esto es una prueba"
+    state: present
+
