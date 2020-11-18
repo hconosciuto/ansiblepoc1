@@ -6,6 +6,6 @@
     whitelist:
     - "{{ numdekb }}"
 
-- name: Reboot the machine with all defaults
-  ansible.windows.win_reboot:
+#- name: Reboot the machine with all defaults
+#  ansible.windows.win_reboot:
 
