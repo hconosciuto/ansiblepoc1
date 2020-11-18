@@ -1,0 +1,7 @@
+---
+- name: Busca los updates que hay.
+  win_updates:
+    category_names: SecurityUpdates
+    state: searched
+    log_path: C:\Ansible_wu.txt
+

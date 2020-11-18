@@ -1,0 +1,11 @@
+---
+- name: Instala un cirto KB en un Windows Server. 
+  win_updates:
+    category_name:
+    - SecurityUpdates
+    whitelist:
+    - "{{ numdekb }}"
+
+- name: Reboot the machine with all defaults
+  ansible.windows.win_reboot:
+

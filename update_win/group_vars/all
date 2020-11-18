@@ -1,0 +1,10 @@
+---
+# Variables listadas aqui son aplicables a todos los grupos
+# bkp: yes
+#existe_archivo: Si
+url_archivo: http://centos02.herdom.com/archivo/provincias.csv
+usuario: 20-31666999-1
+password: hernan01
+accion: remover 
+valor: Esto es una prueba
+numdekb: KB4054519 

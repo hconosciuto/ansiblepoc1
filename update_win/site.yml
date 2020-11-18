@@ -1,0 +1,16 @@
+---
+- name:  Crea o Borra un valor de la Registry. 
+  hosts: WINDOWS2012R2
+  gather_facts: false
+
+  roles:
+
+     - role: lista_fix
+       when: accion == 'listar'
+
+     - role: instala_fix
+       when: accion == 'instalar'
+
+     - role: remueve_fix
+       when: accion == 'remover'
+

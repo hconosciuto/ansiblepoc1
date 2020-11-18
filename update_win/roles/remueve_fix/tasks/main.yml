@@ -1,0 +1,10 @@
+---
+- name: Uninstall hotfix with KB (not recommended)
+  community.windows.win_hotfix:
+    hotfix_kb: "{{ numdekb }}"
+    state: absent
+  register: hotfix_uninstall
+
+- ansible.windows.win_reboot:
+  when: hotfix_uninstall.reboot_required
+
