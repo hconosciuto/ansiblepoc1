@@ -1,10 +1,14 @@
 ---
-- name: Uninstall hotfix with KB (not recommended)
-  community.windows.win_hotfix:
-    hotfix_kb: "{{ numdekb }}"
-    state: absent
-  register: hotfix_uninstall
+#- name: Uninstall hotfix with KB (not recommended)
+#  community.windows.win_hotfix:
+#    hotfix_kb: "{{ numdekb }}"
+#    state: absent
+#  register: hotfix_uninstall
 
-- ansible.windows.win_reboot:
-  when: hotfix_uninstall.reboot_required
+#- ansible.windows.win_reboot:
+#  when: hotfix_uninstall.reboot_required
+
+     - name: DEBUG
+       debug:
+         msg: "La desinstalación de la {{ numdekb }} se encuentra demorada por mal tiempo."
 
