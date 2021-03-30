@@ -1,0 +1,8 @@
+---
+- name: Instala el cliente de Insights y lo registra.
+  yum: 
+    name: redhat-access-insights
+    state: present
+
+- name: Registra el nodo en Insights.
+  shell: redhat-access-insights --register

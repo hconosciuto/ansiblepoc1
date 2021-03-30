@@ -1,0 +1,10 @@
+---
+- name: Chequea el estado de la suscricion con subscription-manager.
+  shell: "subscription-manager list | egrep -i 'status:'" 
+  #command: "subscription-manager list | egrep -i 'status: '|cut -d':' -f2|sed 's/ //g' "
+  register: suscripto
+  failed_when: suscripto.stdout.find("Subscribed") == -1
+
+#- name: Muestra
+#  debug:
+#    msg: "{{ suscripto }}"

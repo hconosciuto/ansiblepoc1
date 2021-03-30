@@ -1,0 +1,16 @@
+---
+- name: Dejo limpio los serers con Inisghts.
+  hosts: Insights
+  gather_facts: false
+  remote_user: root
+
+  tasks:
+
+  - name: Desregistra el nodo en Insights.
+    shell: redhat-access-insights --unregister
+
+  - name: Desinstala el cliente de Insights y lo registra.
+    yum: 
+      name: redhat-access-insights
+      state: absent
+

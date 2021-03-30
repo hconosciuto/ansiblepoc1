@@ -1,0 +1,9 @@
+---
+- name: Si el equipo no está registrado crea un MOTD. 
+  hosts: Insights
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - crea_motd

@@ -1,0 +1,6 @@
+---
+- name: Crea el motd en base a un jinja2 template.
+  template:
+     src: motd.jinja2
+     dest: /etc/motd
+
