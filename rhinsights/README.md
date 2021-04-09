@@ -1,13 +1,15 @@
 # Demo de Instalación de Red Hat Insight
 
-El objetvio de esta aplicación es utlizarla como demo de OCP.
-XXXXXXXXXXXXXXXXXXXM.
+Este playbook realiza la instalación de Red Hat Insights en un RHEL y luego registra el nodo en dicha herramienta.
+Es parte de la Demo de Red Hat Insights con Ansible Automation Plarform y es llamado en un Workflow luego de validar que la suscripción es válida y está ativa.
 
 ## Uso:
 
 ```
-lee_registros.py: Lee los registros del Postgresql y los muestra en un Flask.
+Incluye un único role que tiene 2 tareas:
 
-Las variables que utilizan son:
+   1) La instalación del paquetes de Red Hat Insights.
 
-hac_PHOST    : Nombre del host del Postgresql.
+   2) La registración del nodo en Red Hat Insights.
+
+La idea es poder utilizar un nombre de Grupo en el host inventory para mostrar como lo hace en mas de un nodo.
