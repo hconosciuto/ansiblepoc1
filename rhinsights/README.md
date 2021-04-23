@@ -1,15 +1,14 @@
-# Demo de Instalación de Red Hat Insight
+# Installation Red Hat Insight Demo
 
-Este playbook realiza la instalación de Red Hat Insights en un RHEL y luego registra el nodo en dicha herramienta.
-Es parte de la Demo de Red Hat Insights con Ansible Automation Plarform y es llamado en un Workflow luego de validar que la suscripción es válida y está ativa.
+This playbook deploys Red Hat Insight in a RHEL system and then register and run the agent to collect info.
+It is part of a Red Hat Insight demo with Ansible Automation Platform and it is called by a Workflow which first validates if the OS has a valid and active subscription.
 
-## Uso:
+## Use:
 
 ```
-Incluye un único role que tiene 2 tareas:
+This playbook includes only one role which has two tasks:
 
-   1) La instalación del paquetes de Red Hat Insights.
+   1) Red Hat Insights RPMs install.
 
-   2) La registración del nodo en Red Hat Insights.
+   2) Red Hat Insight node registration to collect the data.
 
-La idea es poder utilizar un nombre de Grupo en el host inventory para mostrar como lo hace en mas de un nodo.

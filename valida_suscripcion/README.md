@@ -1,12 +1,16 @@
-# Valida si los nodos tienen una suscripción activa y válida de Red Hat.
+# This playbook validates if the node has a valid and active subscription.
 
-El objetio de este playbook y validar si los nodos cuentan con una suscripción válida de Red Hat.
-Este playbook podría ser el primer componente de un Workflow de Ansible Tower.
-Es usado en la Demo de instalación de Red Hat Inisghts.
+The goal of this playbook is to validate if the nodes have a valid Red Hat subscription.
 
-## Uso:
+This playbook could be the first part of a Ansible Automation Workflow which after a successful result installs some products on RHEL systems.
+
+It is used in the Red Hat Insight Demo.
+
+## Use:
 
 ```
-El playbook ejecuta el comando subscription-manager y analiza la salida del mismo para validar si
-la suscripción está Activa y Válida. En caso negativo devuelve el playbook como "Failed".
-Además contiene un role llamado "crea_motd" que genera un mensaje de suscripción inválida en el MotD del nodo.
+The playbook execute the subscription-manager command and the analucez the result searching for a valid response.
+In case not, the playbook fails.
+
+Also the playbook has a crea_motd role which, in case the validation process fails, create a login message into the node which shows that the system has an invalid subscription and how to subscribe it.
+
