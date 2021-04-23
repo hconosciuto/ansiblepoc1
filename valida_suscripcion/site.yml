@@ -1,6 +1,6 @@
 ---
 - name: Valida si los hosts estan con una suscripción válida de Red Hat. 
-  hosts: Insights
+  #hosts: Insights
   gather_facts: false
   remote_user: root
 

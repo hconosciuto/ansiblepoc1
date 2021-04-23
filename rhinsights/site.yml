@@ -1,6 +1,6 @@
 ---
 - name: Instala Red Hat Insights y Registra el nodo.
-  hosts: Insights
+  #hosts: Insights
   gather_facts: false
   remote_user: root
 
