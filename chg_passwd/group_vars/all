@@ -1,5 +1,5 @@
 ---
 # Variables listadas aqui son aplicables a todos los grupos
-usuario: hernan
+user_name: hernan
 nombre_host: rhel33
 clave_nueva: 1234
