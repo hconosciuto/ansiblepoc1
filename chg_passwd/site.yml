@@ -1,6 +1,6 @@
 ---
 - name:  Baja un archivo de una pagina.
-  hosts: Seguridad
+  hosts: all
   gather_facts: false
   remote_user: root
 
