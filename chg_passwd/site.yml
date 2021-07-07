@@ -1,0 +1,9 @@
+---
+- name:  Baja un archivo de una pagina.
+  hosts: Seguridad
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - chg_passwd

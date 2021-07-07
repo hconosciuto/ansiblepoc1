@@ -1,0 +1,5 @@
+---
+- name: Cambia la clave de un usuario del linux.
+  debug:
+         msg: "La password del usuario {{ username }} del server {{ nombre_host }}  se cambio a {{ clave_nueva }}"
+
