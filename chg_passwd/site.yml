@@ -1,9 +1,11 @@
 ---
-- name:  Baja un archivo de una pagina.
+- name:  Cambia la password de un usuario.
   hosts: all
-  gather_facts: false
+  gather_facts: true
   remote_user: root
 
   roles:
 
-     - chg_passwd
+         - { role: chg_passwd, when: ansible_nodename ==  nombre_host }
+
+

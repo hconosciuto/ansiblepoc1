@@ -1,5 +1,6 @@
 ---
 # Variables listadas aqui son aplicables a todos los grupos
-username: hernan
-nombre_host: rhel33
+username: juana
+#nombre_host: rhel33
+nombre_host: tower.herdom.com
 clave_nueva: 1234

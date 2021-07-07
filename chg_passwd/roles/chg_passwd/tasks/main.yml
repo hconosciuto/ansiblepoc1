@@ -1,5 +1,13 @@
 ---
-- name: Cambia la clave de un usuario del linux.
+- name: Creo una password random.
+  shell: date +%s | sha256sum | base64 | head -c 8 
+  #shell: /usr/bin/openssl rand -base64 4
+  register: clave_nueva
+
+- name: Cambio la clave de un usuario.
+  shell: echo -e "{{ clave_nueva.stdout }}\n{{ clave_nueva.stdout }}" | passwd {{ username }}
+
+- name: Muestro los valores usados para que se manden por mail.
   debug:
-         msg: "La password del usuario {{ username }} del server {{ nombre_host }}  se cambio a {{ clave_nueva }}"
+         msg: "La password del usuario {{ username }} del server {{ nombre_host }}  se cambio a '{{ clave_nueva.stdout }}'"
 
