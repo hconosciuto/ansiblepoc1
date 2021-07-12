@@ -1,0 +1,8 @@
+---
+- name: Valida si existe el archivo flag y se queda esperando hasta que exista.
+  stat: 
+      path: /root/archivos/archivo_source.fin
+  register: existe
+  until: existe.stat.exists
+  retries: 1000
+  delay: 5

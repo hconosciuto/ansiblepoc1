@@ -1,0 +1,9 @@
+---
+- name: Valida si existe un flag para copiar el archivo de manera consistente.
+  hosts: centos01.herdom.com
+  gather_facts: false
+  remote_user: root
+
+  roles:
+
+     - valida_archivo
