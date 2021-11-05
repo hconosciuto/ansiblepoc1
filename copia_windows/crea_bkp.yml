@@ -1,0 +1,9 @@
+---
+- name: Crea la carpeta de backup.
+  hosts: WINDOWS2012R2
+  vars:
+      fecha: "{{ lookup('pipe','date +%Y%m%d') }}"
+
+  roles:
+        - crea_bkp
+

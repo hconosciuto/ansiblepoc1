@@ -1,0 +1,7 @@
+---
+- name: Baja servicio spooler
+  hosts: Windows
+
+  roles:
+        - baja_servicio
+
