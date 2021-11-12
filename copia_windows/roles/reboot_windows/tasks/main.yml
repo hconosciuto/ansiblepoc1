@@ -1,0 +1,10 @@
+---
+- name: Obtiene la fecha del sistema.
+  debug:
+   msg: "Debido a un error en la actualizacion se dispara reboot del servidor {{ node_selector }}"
+
+- name: Ejecuta el reboot del server.
+  win_reboot:
+    msg: "Reboot del sercidor disparado por Ansible Automation Platform debido a un error de update."
+  delegate_to: "{{ node_selector }}"
+

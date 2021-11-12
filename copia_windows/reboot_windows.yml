@@ -1,0 +1,9 @@
+---
+- name: Realiza el reboot del server.
+  hosts: Windows
+  vars:
+      fecha: "{{ lookup('pipe','date +%Y%m%d') }}"
+
+  roles:
+        - reboot_windows
+
