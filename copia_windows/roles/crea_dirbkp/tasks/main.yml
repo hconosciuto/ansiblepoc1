@@ -6,3 +6,4 @@
   win_file:
     path: C:\HERNAN\INTERFACES_PROGS\{{ interfaz }}\BKP\{{ fecha }}
     state: directory
+  delegate_to: "{{ node_selector }}"
