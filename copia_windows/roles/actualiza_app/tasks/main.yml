@@ -1,7 +1,7 @@
 ---
 - name: Obtiene la fecha del sistema.
   debug:
-   msg: "Actualizando la interfaz: {{ interfaz }} en servidor {{ node_seector}}."
+   msg: "Actualizando la interfaz: {{ interfaz }} en servidor {{ node_selector }}."
 
 - name: Copia los archivos nuevos.
   win_copy:
