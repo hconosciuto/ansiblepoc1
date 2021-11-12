@@ -1,6 +1,6 @@
 ---
 - name: Crea la carpeta de backup.
-  hosts: windows
+  hosts: Windows
   vars:
       fecha: "{{ lookup('pipe','date +%Y%m%d') }}"
 

@@ -1,7 +1,7 @@
 ---
 - name: Obtiene la fecha del sistema.
   debug:
-   msg: "Creando la carpeta en interfaz: {{ interfaz }} con fecha: {{ fecha }}"
+   msg: "Creando la carpeta en interfaz: {{ interfaz }} con fecha: {{ fecha }} en el servidor {{ node_selector }}"
 - name: Crea la carpeta de backup con la fecha.
   win_file:
     path: C:\HERNAN\INTERFACES_PROGS\{{ interfaz }}\BKP\{{ fecha }}
