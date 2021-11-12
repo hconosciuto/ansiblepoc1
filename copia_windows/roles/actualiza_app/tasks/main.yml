@@ -1,17 +1,19 @@
 ---
 - name: Obtiene la fecha del sistema.
   debug:
-   msg: "Actualizando la interfaz: {{ interfaz }}."
+   msg: "Actualizando la interfaz: {{ interfaz }} en servidor {{ node_seector}}."
 
 - name: Copia los archivos nuevos.
   win_copy:
     src: C:\HERNAN\INTERFACES_PROGS\NUEVO\libreria1.dll
     dest: C:\HERNAN\INTERFACES_PROGS\{{ interfaz }}\
     remote_src: yes
+  delegate_to: "{{ node_selector }}"
 
 - name: Copia los archivos nuevos.
   win_copy:
     src: C:\HERNAN\INTERFACES_PROGS\NUEVO\Archivo1.txt
     dest: C:\HERNAN\INTERFACES_PROGS\{{ interfaz }}\
     remote_src: yes
+  delegate_to: "{{ node_selector }}"
 
